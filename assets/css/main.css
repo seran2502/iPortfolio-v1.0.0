@@ -1273,3 +1273,25 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Download CV link in the side navigation */
+.navmenu .cv-nav-button,
+.navmenu .cv-nav-button:focus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: calc(100% - 12px);
+  margin: 8px 6px 0;
+  padding: 12px 14px;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-weight: 600;
+}
+.navmenu .cv-nav-button:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), #000 12%);
+}
+.navmenu .cv-nav-button .navicon { margin: 0; }
