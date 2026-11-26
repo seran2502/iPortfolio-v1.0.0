@@ -1,191 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Spacely · Seran K</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
+  <title>Spacely Case Study | Seran K UI/UX</title>
+  <meta name="description" content="Spacely UI/UX case study by SERAN K — a warehouse space sharing mobile app for seekers and hosts.">
+  <meta name="keywords" content="Spacely, UI UX case study, warehouse app, user flow, Figma, SERAN K">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .case-hero { padding: 54px 0 30px; }
+    .case-kicker { color: var(--accent-color); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 12px; }
+    .case-hero h1 { font-size: clamp(36px, 5vw, 58px); font-weight: 800; margin: 12px 0; }
+    .case-hero p { max-width: 780px; font-size: 18px; line-height: 1.8; }
+    .case-cover { width: 100%; border-radius: 16px; margin: 24px 0 8px; }
+    .case-section { padding: 42px 0; }
+    .case-section h2 { font-size: 30px; font-weight: 700; margin-bottom: 16px; }
+    .case-section h3 { font-size: 19px; font-weight: 700; margin-bottom: 10px; }
+    .case-section p, .case-section li { line-height: 1.8; }
+    .case-meta, .case-card { background: var(--surface-color); border: 1px solid #e8edf2; border-radius: 14px; padding: 22px; height: 100%; }
+    .case-meta strong { display: block; font-size: 12px; color: #77808a; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 6px; }
+    .case-meta span { font-weight: 600; }
+    .flow-lane { border: 1px solid #e4eaf0; border-radius: 16px; padding: 22px; background: #fbfcfe; height: 100%; }
+    .flow-lane h3 { display:flex; align-items:center; gap:10px; }
+    .flow-step { background: #fff; border: 1px solid #dce5ee; border-radius: 10px; padding: 12px 14px; text-align: center; font-weight: 500; }
+    .flow-step.primary { background: #eaf6fc; border-color: #b9deef; }
+    .flow-arrow { text-align: center; color: var(--accent-color); font-size: 21px; line-height: 1.5; }
+    .flow-branch { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+    .tag-list { display:flex; flex-wrap:wrap; gap:9px; padding:0; list-style:none; }
+    .tag-list li { background:#eef6fa; color:#24536b; border-radius:30px; padding:7px 13px; font-size:13px; font-weight:600; }
+    .case-cta { display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:8px; background:var(--accent-color); color:#fff; font-weight:600; }
+    .case-cta:hover { color:#fff; opacity:.9; }
+    @media(max-width:575px){ .flow-branch { grid-template-columns:1fr; } .case-section { padding:30px 0; } }
+  </style>
 </head>
-
 <body class="portfolio-details-page">
-
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/seran-profile.jpeg" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Seran K</h1>
-    </a>
-
+    <div class="profile-img"><img src="assets/img/profile01.webp" alt="SERAN K" class="img-fluid rounded-circle"></div>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center"><h1 class="sitename">SERAN K</h1></a>
     <div class="social-links text-center">
-      <a href="http://linkedin.com/in/serankumar" class="facebook" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="https://www.behance.net/serankumar" class="instagram" aria-label="Behance"><i class="bi bi-behance"></i></a>
-      <a href="https://dribbble.com/seran2502" class="twitter" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
-      <a href="mailto:serank2502@gmail.com" class="google-plus" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/serankumar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.behance.net/serankumar" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="bi bi-behance"></i></a>
+      <a href="https://dribbble.com/seran2502" target="_blank" rel="noopener noreferrer" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+      <a href="mailto:serank2502@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
     </div>
-
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i>Portfolio</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i>Services</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
+        <li class="mt-3 px-2"><a href="https://drive.google.com/file/d/1pZoW_y7LEJCIkzonTnQwi37VfmlLSUPU/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bi bi-download navicon"></i>Download CV</a></li>
       </ul>
     </nav>
-
-    <div class="text-center mt-3 px-3">
-      <a href="https://drive.google.com/file/d/1pZoW_y7LEJCIkzonTnQwi37VfmlLSUPU/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Download CV</a>
-    </div>
-
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Spacely Project</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Spacely</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><img src="assets/img/project-title.webp" alt="Spacely project showcase"></div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: UI/UX Design</li>
-                <li><strong>Type</strong>: Personal Project</li>
-                <li><strong>Duration</strong>: 2–4 Weeks</li>
-                <li><strong>Tools</strong>: Figma, Figma Make, Google Stitch</li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Spacely</h2>
-              <p>Spacely connects businesses needing storage space with warehouse owners and logistics managers who have unused commercial space. The platform helps users discover, compare, and request spaces based on location, capacity, pricing, availability, and facilities.</p>
-              <p>The goal is to make finding and renting warehouse space faster, simpler, and more flexible.</p>
-            </div>
-          </div>
-
+    <section class="case-hero">
+      <div class="container" data-aos="fade-up">
+        <div class="case-kicker">UI/UX Case Study · 2026</div>
+        <h1>Spacely</h1>
+        <p>A warehouse space-sharing mobile app that helps businesses find suitable storage space and helps warehouse owners share unused capacity.</p>
+        <img src="assets/img/project-title.webp" class="case-cover" alt="Spacely project presentation">
+        <div class="row g-3 mt-2">
+          <div class="col-6 col-lg-3"><div class="case-meta"><strong>Project type</strong><span>Personal project</span></div></div>
+          <div class="col-6 col-lg-3"><div class="case-meta"><strong>Platform</strong><span>Mobile app</span></div></div>
+          <div class="col-6 col-lg-3"><div class="case-meta"><strong>My role</strong><span>UI/UX Designer</span></div></div>
+          <div class="col-6 col-lg-3"><div class="case-meta"><strong>Tools</strong><span>Figma, Figma Make, Google Stitch</span></div></div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Portfolio Details Section -->
+    <section class="case-section light-background">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-6"><h2>Project overview</h2><p>Spacely is designed around two user groups: <strong>Seekers</strong>, who need warehouse space for a selected size and period, and <strong>Hosts</strong>, who have available warehouse capacity to list and rent out. The experience brings discovery, space information, booking requests, communication, and booking management into one place.</p></div>
+          <div class="col-lg-6"><h2>Problem statement</h2><p>Businesses often need flexible warehouse space for short-term storage, while warehouse owners may have unused capacity during off-season periods. Finding a suitable space, understanding its cost, and coordinating a booking can take time. Spacely aims to make this process clearer and more convenient for both sides.</p></div>
+        </div>
+      </div>
+    </section>
 
+    <section class="case-section">
+      <div class="container" data-aos="fade-up">
+        <h2>Design goals</h2>
+        <div class="row gy-3">
+          <div class="col-md-4"><div class="case-card"><h3><i class="bi bi-search text-primary me-2"></i>Easy discovery</h3><p class="mb-0">Help seekers find spaces using location, size, price, and availability.</p></div></div>
+          <div class="col-md-4"><div class="case-card"><h3><i class="bi bi-info-circle text-primary me-2"></i>Clear information</h3><p class="mb-0">Present warehouse photos, facilities, capacity, pricing, and details clearly.</p></div></div>
+          <div class="col-md-4"><div class="case-card"><h3><i class="bi bi-calendar-check text-primary me-2"></i>Smoother booking</h3><p class="mb-0">Make request, host approval, payment, and booking status easy to follow.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section light-background" id="user-flow">
+      <div class="container" data-aos="fade-up">
+        <h2>User flow</h2>
+        <p class="mb-4">The main journey branches after sign-in based on whether the person wants to find space or list available space.</p>
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="flow-lane">
+              <h3><i class="bi bi-box-arrow-in-down text-primary"></i> Seeker flow</h3>
+              <div class="flow-step primary">Open Spacely</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Sign up / Log in with mobile OTP</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Choose Seeker role</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Home · Search / Recommended / Nearby</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">View warehouse details</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Enter required area, duration &amp; move-in date</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Review estimated cost &amp; send booking request</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Wait for Host approval</div><div class="flow-arrow">↓</div>
+              <div class="flow-step primary">Pay after acceptance · Booking confirmed</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Track booking · Chat · Manage booking</div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="flow-lane">
+              <h3><i class="bi bi-building text-primary"></i> Host flow</h3>
+              <div class="flow-step primary">Open Spacely</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Sign up / Log in with mobile OTP</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Choose Host role</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Host home / My Space</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Add warehouse details, photos, facilities &amp; pricing</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Save draft or publish listing</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Receive seeker booking request</div><div class="flow-arrow">↓</div>
+              <div class="flow-branch">
+                <div><div class="flow-step">Review request</div><div class="flow-arrow">↓</div><div class="flow-step primary">Accept request</div></div>
+                <div><div class="flow-step">Review request</div><div class="flow-arrow">↓</div><div class="flow-step">Decline request</div></div>
+              </div>
+              <div class="flow-arrow">↓</div>
+              <div class="flow-step">After acceptance, seeker completes payment</div><div class="flow-arrow">↓</div>
+              <div class="flow-step">Manage live spaces, bookings, chat &amp; history</div>
+            </div>
+          </div>
+        </div>
+        <p class="small text-muted mt-3 mb-0">Flow represents the planned product experience and key screens.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container" data-aos="fade-up">
+        <h2>Key features</h2>
+        <div class="row gy-3">
+          <div class="col-md-6"><div class="case-card"><h3>For Seekers</h3><ul class="mb-0"><li>Search, recommended, and nearby warehouse listings</li><li>Warehouse details, photos, facilities, and ratings</li><li>Cost estimate based on area and rental duration</li><li>Move-in date selection and booking request</li><li>Booking status, chat, and booking history</li></ul></div></div>
+          <div class="col-md-6"><div class="case-card"><h3>For Hosts</h3><ul class="mb-0"><li>Create, edit, and manage warehouse listings</li><li>Live and draft listing states</li><li>View incoming booking requests</li><li>Accept or decline requests</li><li>Manage accepted bookings, chat, and history</li></ul></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section light-background">
+      <div class="container" data-aos="fade-up">
+        <h2>My design process</h2>
+        <div class="row gy-3">
+          <div class="col-sm-6 col-lg-3"><div class="case-card"><h3>01 · Understand</h3><p class="mb-0">Identify the needs of warehouse seekers and space owners and define the core problem.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="case-card"><h3>02 · Structure</h3><p class="mb-0">Organize app content, roles, navigation, and the main user journeys.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="case-card"><h3>03 · Design</h3><p class="mb-0">Create wireframes and mobile UI screens with reusable components and auto layout.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="case-card"><h3>04 · Prototype</h3><p class="mb-0">Connect key screens and interactions to demonstrate the end-to-end experience.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container" data-aos="fade-up">
+        <h2>Tools used</h2>
+        <ul class="tag-list"><li>Figma</li><li>Figma Make</li><li>Google Stitch</li><li>ChatGPT</li></ul>
+        <h2 class="mt-5">What I learned</h2>
+        <p>This project helped me practice designing for two different user roles, structuring end-to-end flows, building reusable components with Auto Layout, and connecting screens through interactive prototyping. It also helped me understand how clear booking states and timely information can reduce confusion in a multi-step service.</p>
+        <a href="index.html#portfolio" class="case-cta mt-3"><i class="bi bi-arrow-left"></i> Back to portfolio</a>
+      </div>
+    </section>
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Seran K</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
-      </div>
-    </div>
-
+    <div class="container"><div class="copyright text-center"><p>©2026 <strong class="px-1 sitename">SERAN K</strong> - Dharmapuri, Tamil Nadu, India.</p></div></div>
   </footer>
-
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
