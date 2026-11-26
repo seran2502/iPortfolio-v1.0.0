@@ -1323,3 +1323,121 @@ section,
   overflow-y: hidden;
   overflow-x: hidden;
 }
+
+
+/* =========================================================
+   Responsive refinements — desktop, tablet and mobile
+   ========================================================= */
+html, body { max-width: 100%; overflow-x: hidden; }
+img, video, iframe { max-width: 100%; }
+.container { width: 100%; }
+
+/* Wide desktop: keep content balanced beside the fixed sidebar */
+@media (min-width: 1200px) {
+  .header { width: 280px; padding: 0 18px; }
+  .header~main, .header~#footer { margin-left: 280px; }
+  .main > section { scroll-margin-top: 0; }
+  .main .container { max-width: 1160px; }
+  .hero { min-height: 100vh; }
+  .hero .container { padding-left: clamp(24px, 4vw, 64px); }
+}
+
+/* Laptop and tablet navigation */
+@media (max-width: 1199px) {
+  .header {
+    width: min(320px, 86vw);
+    height: 100dvh;
+    padding: 18px 18px 28px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    box-shadow: 8px 0 30px rgba(0,0,0,.14);
+  }
+  .header.header-show { left: 0; }
+  .header .header-toggle { top: 16px; right: 16px; }
+  body.header-show { overflow: hidden; }
+  .main, #footer { margin-left: 0 !important; }
+  .main > section { scroll-margin-top: 16px; }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  section, .section { padding: 54px 0; }
+  .section-title { padding-bottom: 38px; }
+  .section-title h2 { font-size: 29px; }
+  .about .row > [class*="col-"] { width: 100%; }
+  .about .row > .col-lg-4 { max-width: 420px; margin-inline: auto; }
+  .about .content { padding-top: 8px; }
+  .portfolio .portfolio-content img { width: 100%; height: auto; }
+  .contact .info-wrap, .contact .php-email-form { height: auto; }
+  .hero { min-height: 78vh; }
+  .hero h2 { font-size: clamp(34px, 6vw, 54px); }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  body { font-size: 15px; line-height: 1.65; }
+  section, .section { padding: 44px 0; }
+  .container { padding-left: 20px; padding-right: 20px; }
+  .section-title { padding-bottom: 30px; }
+  .section-title h2 { font-size: 27px; margin-bottom: 14px; padding-bottom: 14px; }
+  .section-title p { font-size: 14px; }
+  .hero {
+    min-height: min(760px, 88svh);
+    padding: 76px 0 56px;
+    text-align: left;
+  }
+  .hero .hero-banner { object-position: 58% center; }
+  .hero:before { background: rgba(4, 11, 20, .48); }
+  .hero h2 { font-size: clamp(34px, 9vw, 48px); line-height: 1.12; }
+  .hero p { font-size: 19px; margin-top: 12px; }
+  .about .content h2 { font-size: 21px; }
+  .about .content ul li { align-items: flex-start; margin-bottom: 13px; overflow-wrap: anywhere; }
+  .about .content ul li span { min-width: 0; overflow-wrap: anywhere; }
+  .stats .stats-item { padding: 18px 8px; }
+  .stats .stats-item .purecounter { font-size: 38px; }
+  .stats .stats-item p { font-size: 13px; }
+  .skills .progress .skill { font-size: 13px; }
+  .resume .resume-title { font-size: 22px; }
+  .resume .resume-item { padding-left: 17px; }
+  .portfolio .portfolio-item { width: 100%; }
+  .portfolio .portfolio-content { display: block; }
+  .portfolio .portfolio-content > img { display: block; width: 100%; height: auto; }
+  .portfolio .portfolio-content h4 { font-size: 17px; }
+  .portfolio .portfolio-content .small { font-size: 12px; }
+  .services .service-item { align-items: flex-start; }
+  .services .service-item .icon { width: 46px; height: 46px; margin-right: 14px; flex: 0 0 46px; }
+  .services .service-item .icon i { font-size: 21px; }
+  .services .service-item .title { font-size: 17px; margin-bottom: 8px; }
+  .services .service-item .description { font-size: 14px; line-height: 1.6; }
+  .contact .info-wrap, .contact .php-email-form { padding: 20px; }
+  .contact .info-item { margin-bottom: 25px; }
+  .contact .info-item:last-child { margin-bottom: 0; }
+  .contact .php-email-form textarea { min-height: 140px; }
+  .footer { padding: 25px 12px; }
+  .footer .copyright p { line-height: 1.7; }
+  .scroll-top { right: 14px; bottom: 14px; }
+  .portfolio-details .portfolio-info { padding: 20px; margin-top: 20px; }
+  .portfolio-details .portfolio-description h2 { font-size: 22px; }
+  .page-title { padding: 22px 0; }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  .container { padding-left: 16px; padding-right: 16px; }
+  .hero h2 { font-size: 34px; }
+  .section-title h2 { font-size: 25px; }
+  .stats .stats-item { padding-left: 0; padding-right: 0; }
+  .stats .stats-item i { font-size: 34px; }
+  .stats .stats-item .purecounter { margin-left: 48px; font-size: 34px; }
+  .stats .stats-item p { margin-left: 48px; }
+  .header { width: min(300px, 88vw); }
+}
+
+/* Touch and keyboard accessibility */
+@media (hover: none) {
+  .portfolio .portfolio-content:hover img { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
