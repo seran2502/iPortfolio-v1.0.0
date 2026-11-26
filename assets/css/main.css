@@ -1315,3 +1315,11 @@ section,
   position: relative;
   z-index: 3;
 }
+
+
+/* Keep the fixed sidebar navigation from scrolling independently */
+.header {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
